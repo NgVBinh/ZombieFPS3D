@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private SaveDataManager dataManager;
-    private Player playerData;
+    public Player playerData;
 
     [Header("PlayerMove")]
     private float horizontal;
@@ -43,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        dataManager.LoadData("player");
         playerData = dataManager.playerdata.player;
 
         moveSpeedInitial = playerData.speed;

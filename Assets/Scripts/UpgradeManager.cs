@@ -52,7 +52,7 @@ public class UpgradeManager : MonoBehaviour
     {
         // tính giá tiền cần để nâng cấp
         coinHp = Convert.ToInt32(player.health );
-        coinSpeed = Convert.ToInt32(player.speed );
+        coinSpeed = Convert.ToInt32(player.speed )*100;
         coinEnery = Convert.ToInt32(player.enery );
     }
 
@@ -60,9 +60,9 @@ public class UpgradeManager : MonoBehaviour
     {
         LoadDataPlayer();
         CoinToUpgrade();
-        txtHealth.text = "Heath: " + (player.health);
-        txtSpeed.text = "Speed: " + (player.speed);
-        txtEnery.text = "Enery: " + (player.enery);
+        txtHealth.text = "Máu: " + (player.health);
+        txtSpeed.text = "Tốc độ chạy: " + (player.speed);
+        txtEnery.text = "Thể lực: " + (player.enery);
 
 
         btnHealth.text = coinHp + "$";

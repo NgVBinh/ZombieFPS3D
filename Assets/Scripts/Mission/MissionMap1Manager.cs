@@ -31,7 +31,6 @@ public class MissionMap1Manager : MonoBehaviour
                 dataManager.mapdata.maps[0].isWon = true;
                 dataManager.mapdata.maps[1].canOpen = true;
                 dataManager.SaveData("map");
-                Debug.Log(dataManager.mapdata.maps[1].canOpen);
             }
 
             isMissionComplete = true;

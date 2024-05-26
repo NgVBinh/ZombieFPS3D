@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: EneryDrink
   m_EditorClassIdentifier: 
   id: 2
-  itemName: EneryDrink
+  itemName: "N\u01B0\u1EDBc t\u0103ng l\u1EF1c"
   value: 50
   image: {fileID: 21300000, guid: 40d4a6eb80ace92489484128d137858e, type: 3}

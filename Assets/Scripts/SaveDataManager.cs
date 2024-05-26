@@ -14,12 +14,16 @@ public class SaveDataManager : MonoBehaviour
     private string filePathCoinData;
 
     public ItemsData itemsdata = new ItemsData();
-    private string fileNameItemsData = "ItemsCoin.json";
+    private string fileNameItemsData = "DataItem.json";
     private string filePathItemsData;
 
     public MapData mapdata = new MapData();
     private string fileNameMapData = "DataMap.json";
     private string filePathMapData;
+
+    public WeaponData weapondata = new WeaponData();
+    private string fileNameWeaponData = "DataWeapon.json";
+    private string filePathWeaponData;
 
     private void Awake()
     {
@@ -27,13 +31,15 @@ public class SaveDataManager : MonoBehaviour
         filePathCoinData = Path.Combine(Application.persistentDataPath, fileNameCoinData);
         filePathItemsData = Path.Combine(Application.persistentDataPath, fileNameItemsData);
         filePathMapData = Path.Combine(Application.persistentDataPath, fileNameMapData);
+        filePathWeaponData = Path.Combine(Application.persistentDataPath, fileNameWeaponData);
 
         SetDataInitial();
         LoadData("player");
         LoadData("coin");
         LoadData("items");
         LoadData("map");
-        //Debug.Log(playerdata.player.name);
+        LoadData("weapon");
+        //Debug.Log(playerdata.player.weaponName);
     }
 
     private void SetDataInitial()
@@ -59,13 +65,27 @@ public class SaveDataManager : MonoBehaviour
         if (!File.Exists(filePathMapData))
         {
             Map map1 = new Map(0,"Thành phố",false,true);
-            mapdata.maps.Add(map1);
             Map map2 = new Map(1, "Lâu đài", false, false);
-            mapdata.maps.Add(map2);
             Map map3 = new Map(2, "Kho quân sự", false, false);
+            mapdata.maps.Add(map1);
+            mapdata.maps.Add(map2);
             mapdata.maps.Add(map3);
-           
+
             SaveData("map");
+        }
+
+        if (!File.Exists(filePathWeaponData))
+        {
+            Weapon G36 = new Weapon(0,"G36",1);
+            Weapon M4 = new Weapon(1, "M4", 3);
+            Weapon M60 = new Weapon(2, "M60", 2);
+            Weapon M82 = new Weapon(3, "M82", 5);
+            weapondata.weapons.Add(G36);
+            weapondata.weapons.Add(M4);
+            weapondata.weapons.Add(M60);
+            weapondata.weapons.Add(M82);
+
+            SaveData("weapon");
         }
     }
 
@@ -92,6 +112,11 @@ public class SaveDataManager : MonoBehaviour
                 string dataJsonMap = JsonUtility.ToJson(mapdata);
                 File.WriteAllText(filePathMapData, dataJsonMap);
                 Debug.Log("save map data to " + filePathMapData);
+                break;
+            case "weapon":
+                string dataJsonWeapon = JsonUtility.ToJson(weapondata);
+                File.WriteAllText(filePathWeaponData, dataJsonWeapon);
+                Debug.Log("save weapon data to " + filePathWeaponData);
                 break;
         }
 
@@ -144,6 +169,18 @@ public class SaveDataManager : MonoBehaviour
                 else
                 {
                     Debug.LogError("File map not found: " + filePathMapData);
+                }
+                break;
+
+            case "weapon":
+                if (File.Exists(filePathWeaponData))
+                {
+                    string dataJsonWeapon = File.ReadAllText(filePathWeaponData);
+                    weapondata = JsonUtility.FromJson<WeaponData>(dataJsonWeapon);
+                }
+                else
+                {
+                    Debug.LogError("File weapon not found: " + filePathWeaponData);
                 }
                 break;
         }
@@ -213,4 +250,29 @@ public class Map
         this.isWon = isWon;
         this.canOpen = canOpen;
     }
+}
+
+
+[Serializable]
+public class WeaponData
+{
+    public List<Weapon> weapons= new List<Weapon>();
+}
+
+[Serializable]
+public class Weapon
+{
+
+    public int id;
+    public string weaponName;
+    public float damage;
+    //public bool fireRate;
+
+    public Weapon() { }
+    public Weapon(int id,string weaponName,float damage) {
+        this.id = id;
+        this.weaponName = weaponName;
+        this.damage = damage;
+    }
+
 }

@@ -35,7 +35,7 @@ public class LoadSceneManager : MonoBehaviour
     }
 
     IEnumerator LoadAsynchronously(string sceneName)
-    { // scene name is just the name of the current scene being loaded
+    { // scene weaponName is just the weaponName of the current scene being loaded
 
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
 

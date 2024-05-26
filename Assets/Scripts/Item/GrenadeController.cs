@@ -54,7 +54,7 @@ public class GrenadeController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Zombie"))
+        if (other.gameObject.CompareTag("Zombie") )
         {
             ZombieController zombie = other.gameObject.GetComponentInParent<ZombieController>();
             if (zombie != null  && isExplode)
@@ -64,7 +64,8 @@ public class GrenadeController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Player"))
         {
-            PlayerManager.instance.TakeDamage(grenadeDamage);
+            if(isExplode)
+                PlayerManager.instance.TakeDamage(grenadeDamage);
         }
     }
 }

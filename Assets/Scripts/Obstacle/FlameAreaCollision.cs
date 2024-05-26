@@ -16,7 +16,7 @@ public class FlameAreaCollision : MonoBehaviour
 
         if(other.CompareTag("Zombie"))
         {
-            //Debug.Log( other.gameObject.GetComponentInParent<ZombieController>().name);
+            //Debug.Log( other.gameObject.GetComponentInParent<ZombieController>().weaponName);
             other.GetComponentInParent<ZombieController>().SetupIgnite(true, 1.5f);
 
         }
@@ -32,7 +32,7 @@ public class FlameAreaCollision : MonoBehaviour
 
         if (other.CompareTag("Zombie"))
         {
-            //Debug.Log( other.gameObject.GetComponentInParent<ZombieController>().name);
+            //Debug.Log( other.gameObject.GetComponentInParent<ZombieController>().weaponName);
             zombie = other.GetComponentInParent<ZombieController>();
 
             GameObject newFlame = Instantiate(ignitePrefab,zombie.transform.position + new Vector3(0,0.4f,0),Quaternion.identity,zombie.transform);

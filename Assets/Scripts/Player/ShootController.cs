@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ShootController : MonoBehaviour
 {
+    [SerializeField] private SaveDataManager dataManager;
+    public Weapon thisWeapon;
+
     private Animator animator;
     private Camera mainCamera;
     private ParticleSystem shootEffect;
@@ -11,11 +14,13 @@ public class ShootController : MonoBehaviour
     [SerializeField] private BulletObjectPooling bulletPool;
 
     [Header("Shoot")]
+    public string weaponName;
+
     private Vector3 dir = Vector3.zero;
     private float timer;
-    public float fireRange = 50f;
+    private float fireRange = 50f;
     public float fireRate = 1f;
-    public float damage = 1f;
+    private float damage;
 
     //public bool isScope=false;
     [Header("Ammo")]
@@ -35,15 +40,18 @@ public class ShootController : MonoBehaviour
     public bool canShoot = true;
 
     [Header("Ui Ammo")]
-    [SerializeField] private TextMeshProUGUI weaponName;
+    [SerializeField] private TextMeshProUGUI weaponNameText;
     [SerializeField] private TextMeshProUGUI currentAmmoText;
     [SerializeField] private TextMeshProUGUI maxAmmoText;
     private void Start()
     {
+        LoadThisWeapon();
         animator = GetComponentInParent<Animator>();
         shootEffect = GetComponentInChildren<ParticleSystem>();
         audioSource = GetComponentInParent<AudioSource>();
         mainCamera = Camera.main;
+
+        damage = thisWeapon.damage;
         currentAmmo = maxAmmo;
 
         DisplayAmmoUI();
@@ -61,7 +69,22 @@ public class ShootController : MonoBehaviour
             Reload();
         }
     }
+    private void LoadThisWeapon()
+    {
+        dataManager.LoadData("weapon");
 
+        for (int i = 0;i<dataManager.weapondata.weapons.Count;i++)
+        {
+            if (weaponName == null) { Debug.Log("weapon name is null"); }
+            if (weaponName.Equals(dataManager.weapondata.weapons[i].weaponName))
+            {
+                thisWeapon = dataManager.weapondata.weapons[i];
+                return;
+            }
+        }
+        Debug.Log("wepon not found" + weaponName);
+
+    }
     public void Shoot()
     {
         if (isReloading) return;
@@ -150,7 +173,7 @@ public class ShootController : MonoBehaviour
 
     public void DisplayAmmoUI()
     {
-        weaponName.text = transform.parent.name.ToString();
+        weaponNameText.text = thisWeapon.weaponName.ToString();
         currentAmmoText.text = currentAmmo.ToString();
         maxAmmoText.text = maxAmmo.ToString();
     }

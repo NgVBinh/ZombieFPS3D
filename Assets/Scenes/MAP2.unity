@@ -2146,7 +2146,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Background Volume
+  m_text: "Nh\u1EA1c n\u1EC1n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e, type: 2}
   m_sharedMaterial: {fileID: 21148088844906328, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e,
@@ -2174,7 +2174,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46
+  m_fontSize: 57.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3410,7 +3410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPool: {fileID: 1459454851}
-  fireRange: 50
+  weaponNamea: 
   fireRate: 1
   damage: 5
   currentAmmo: 0
@@ -3420,7 +3420,7 @@ MonoBehaviour:
   reloadSound: {fileID: 8300000, guid: dbebcda11c1379040a59a71fbce6ff5a, type: 3}
   ammoBox: {fileID: 11400000, guid: a985aecce9b35f940b812a30c64ea1e4, type: 2}
   canShoot: 1
-  weaponName: {fileID: 766803656}
+  weaponNameText: {fileID: 766803656}
   currentAmmoText: {fileID: 1565910541}
   maxAmmoText: {fileID: 2114635600}
 --- !u!1001 &78414834
@@ -3725,7 +3725,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 778.80005, y: -49.8465}
-  m_SizeDelta: {x: 160, y: 99.693}
+  m_SizeDelta: {x: 300, y: 99.693}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89400325
 MonoBehaviour:
@@ -9228,7 +9228,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Continue
+  m_Text: "Ti\u1EBFp t\u1EE5c"
 --- !u!222 &106234193
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11829,7 +11829,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MUSIC
+  m_text: "\xC2m thanh"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e, type: 2}
   m_sharedMaterial: {fileID: 21148088844906328, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e,
@@ -20670,7 +20670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPool: {fileID: 1459454851}
-  fireRange: 50
+  weaponNamea: 
   fireRate: 1
   damage: 5
   currentAmmo: 0
@@ -20680,7 +20680,7 @@ MonoBehaviour:
   reloadSound: {fileID: 8300000, guid: dbebcda11c1379040a59a71fbce6ff5a, type: 3}
   ammoBox: {fileID: 11400000, guid: a985aecce9b35f940b812a30c64ea1e4, type: 2}
   canShoot: 1
-  weaponName: {fileID: 766803656}
+  weaponNameText: {fileID: 766803656}
   currentAmmoText: {fileID: 1565910541}
   maxAmmoText: {fileID: 2114635600}
 --- !u!4 &277412549
@@ -21032,7 +21032,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Effects Volume
+  m_text: "Hi\u1EC7u \u1EE9ng"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e, type: 2}
   m_sharedMaterial: {fileID: 21148088844906328, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e,
@@ -25897,7 +25897,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 259.6, y: -49.8465}
-  m_SizeDelta: {x: 160, y: 99.693}
+  m_SizeDelta: {x: 300, y: 99.693}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &409340829
 MonoBehaviour:
@@ -32876,7 +32876,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Control
+  m_text: "\u0110i\u1EC1u khi\u1EC3n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e, type: 2}
   m_sharedMaterial: {fileID: 21148088844906328, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e,
@@ -32904,7 +32904,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.15
+  m_fontSize: 35.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -41609,7 +41609,7 @@ GameObject:
   - component: {fileID: 709923554}
   - component: {fileID: 709923553}
   m_Layer: 5
-  m_Name: PanelGame
+  m_Name: PanelMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42197,7 +42197,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 778.80005, y: -49.8465}
-  m_SizeDelta: {x: 160, y: 99.693}
+  m_SizeDelta: {x: 300, y: 99.693}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &723445635
 MonoBehaviour:
@@ -45233,8 +45233,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -138}
-  m_SizeDelta: {x: 300, y: 200}
+  m_AnchoredPosition: {x: 45.1, y: -138}
+  m_SizeDelta: {x: 890.199, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &802850506
 MonoBehaviour:
@@ -45269,7 +45269,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Victory
+  m_Text: "Nhi\u1EC7m v\u1EE5 ho\xE0n th\xE0nh"
 --- !u!222 &802850507
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -47962,7 +47962,7 @@ GameObject:
   - component: {fileID: 866431127}
   - component: {fileID: 866431126}
   m_Layer: 5
-  m_Name: MusicBGText
+  m_Name: mousesentivity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48049,7 +48049,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SentivityMouse
+  m_text: "\u0110\u1ED9 nh\u1EA1y chu\u1ED9t"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e, type: 2}
   m_sharedMaterial: {fileID: 21148088844906328, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e,
@@ -48755,8 +48755,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -138}
-  m_SizeDelta: {x: 300, y: 200}
+  m_AnchoredPosition: {x: -0.000026703, y: -138}
+  m_SizeDelta: {x: 710, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &881490336
 MonoBehaviour:
@@ -48791,7 +48791,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lose
+  m_Text: "Nhi\u1EC7m v\u1EE5 th\u1EA5t b\u1EA1i"
 --- !u!222 &881490337
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -49932,8 +49932,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 134.85, y: -696.60004}
-  m_SizeDelta: {x: 191.298, y: 93}
+  m_AnchoredPosition: {x: -185, y: -672}
+  m_SizeDelta: {x: 300, y: 93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &903277749
 MonoBehaviour:
@@ -58095,7 +58095,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Home
+  m_text: "M\xE0n h\xECnh ch\xEDnh"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e, type: 2}
   m_sharedMaterial: {fileID: 21148088844906328, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e,
@@ -58123,10 +58123,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 63.15
-  m_fontSizeBase: 46
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -58439,7 +58439,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CONTROL
+  m_text: "\u0110i\u1EC1u khi\u1EC3n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e, type: 2}
   m_sharedMaterial: {fileID: 21148088844906328, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e,
@@ -59510,7 +59510,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Music
+  m_text: "\xC2m thanh"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e, type: 2}
   m_sharedMaterial: {fileID: 21148088844906328, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e,
@@ -59538,7 +59538,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.15
+  m_fontSize: 38.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -61769,7 +61769,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1056116768}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -63319,8 +63319,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 214, y: -81}
-  m_SizeDelta: {x: 300, y: 200}
+  m_AnchoredPosition: {x: 144.027, y: -81}
+  m_SizeDelta: {x: 439.947, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1099731739
 MonoBehaviour:
@@ -63355,7 +63355,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PAUSE
+  m_Text: "T\u1EA1m d\u1EEBng"
 --- !u!222 &1099731740
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -65457,7 +65457,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Replay
+  m_Text: "Ch\u01A1i l\u1EA1i"
 --- !u!222 &1145675685
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -72685,6 +72685,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dataManager: {fileID: 2054769553}
+  playerData:
+    id: 0
+    name: 
+    health: 0
+    enery: 0
+    speed: 0
   energyReductionInit: 0.5
   checkGroundPoint: {fileID: 321019380}
   groundLayer:
@@ -78098,7 +78104,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Replay
+  m_text: "Ch\u01A1i l\u1EA1i"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e, type: 2}
   m_sharedMaterial: {fileID: 21148088844906328, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e,
@@ -78126,10 +78132,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 52.3
-  m_fontSizeBase: 46
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -79521,7 +79527,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 259.6, y: -49.8465}
-  m_SizeDelta: {x: 160, y: 99.693}
+  m_SizeDelta: {x: 300, y: 99.693}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1528142892
 MonoBehaviour:
@@ -80568,7 +80574,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Reward
+  m_Text: "Ph\u1EA7n th\u01B0\u1EDFng"
 --- !u!222 &1559232486
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -83304,8 +83310,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -95.64899, y: -696.60004}
-  m_SizeDelta: {x: 191.298, y: 93}
+  m_AnchoredPosition: {x: 137.85005, y: -672}
+  m_SizeDelta: {x: 300, y: 93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1626484599
 MonoBehaviour:
@@ -84575,7 +84581,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Number of monsters destroyed :'
+  m_Text: "S\u1ED1 x\xE1c s\u1ED1ng \u0111\xE3 ti\xEAu di\u1EC7t :"
 --- !u!222 &1675239106
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -90611,7 +90617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPool: {fileID: 1459454851}
-  fireRange: 50
+  weaponNamea: 
   fireRate: 0.5
   damage: 3
   currentAmmo: 0
@@ -90621,7 +90627,7 @@ MonoBehaviour:
   reloadSound: {fileID: 8300000, guid: dbebcda11c1379040a59a71fbce6ff5a, type: 3}
   ammoBox: {fileID: 11400000, guid: a985aecce9b35f940b812a30c64ea1e4, type: 2}
   canShoot: 1
-  weaponName: {fileID: 766803656}
+  weaponNameText: {fileID: 766803656}
   currentAmmoText: {fileID: 1565910541}
   maxAmmoText: {fileID: 2114635600}
 --- !u!1 &1815521061
@@ -92866,7 +92872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPool: {fileID: 1459454851}
-  fireRange: 50
+  weaponNamea: 
   fireRate: 0.2
   damage: 1
   currentAmmo: 0
@@ -92876,7 +92882,7 @@ MonoBehaviour:
   reloadSound: {fileID: 8300000, guid: dbebcda11c1379040a59a71fbce6ff5a, type: 3}
   ammoBox: {fileID: 11400000, guid: a985aecce9b35f940b812a30c64ea1e4, type: 2}
   canShoot: 1
-  weaponName: {fileID: 766803656}
+  weaponNameText: {fileID: 766803656}
   currentAmmoText: {fileID: 1565910541}
   maxAmmoText: {fileID: 2114635600}
 --- !u!4 &1895055005 stripped
@@ -93505,7 +93511,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Replay
+  m_Text: "Ch\u01A1i l\u1EA1i"
 --- !u!222 &1922284212
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -95953,7 +95959,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Home
+  m_Text: "M\xE0n h\xECnh ch\xEDnh"
 --- !u!222 &1979530787
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -97151,7 +97157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc0d85ac57c7f6440900a71598fd6bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minimapCamera: {fileID: 0}
   playerTransform: {fileID: 1329875731}
+  updateThreshold: 1
 --- !u!114 &2004714620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97701,7 +97709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPool: {fileID: 1459454851}
-  fireRange: 50
+  weaponNamea: 
   fireRate: 0.15
   damage: 2
   currentAmmo: 0
@@ -97711,7 +97719,7 @@ MonoBehaviour:
   reloadSound: {fileID: 8300000, guid: 35c7ebd6728e64f4ab5734eed1e348fa, type: 3}
   ammoBox: {fileID: 11400000, guid: a985aecce9b35f940b812a30c64ea1e4, type: 2}
   canShoot: 1
-  weaponName: {fileID: 766803656}
+  weaponNameText: {fileID: 766803656}
   currentAmmoText: {fileID: 1565910541}
   maxAmmoText: {fileID: 2114635600}
 --- !u!4 &2013887859 stripped
@@ -99182,6 +99190,8 @@ MonoBehaviour:
     items: []
   mapdata:
     maps: []
+  weapondata:
+    weapons: []
 --- !u!114 &2054769554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107171,7 +107181,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Home
+  m_Text: "M\xE0n h\xECnh ch\xEDnh"
 --- !u!222 &2118327978
 CanvasRenderer:
   m_ObjectHideFlags: 0

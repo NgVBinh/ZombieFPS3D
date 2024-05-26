@@ -11,21 +11,25 @@ public class ThrowGrenade : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Item greanadeInInventory = InventoryManager.Instance.GetItemInInventory(grenade);
-            if (greanadeInInventory == null)
-            {
-                //Debug.Log("Het luu dan");
-                ScreenManager.Instance.NotificationInGame("Hết lựu đạn",2.5f);
-            }
-            if (greanadeInInventory != null)
-            {
-                throwGrenade();
-                InventoryManager.Instance.RemoveItem(greanadeInInventory);
-            }
+            Throw();
         }
 
     }
 
+    private void Throw()
+    {
+        Item greanadeInInventory = InventoryManager.Instance.GetItemInInventory(grenade);
+        if (greanadeInInventory == null)
+        {
+            //Debug.Log("Het luu dan");
+            ScreenManager.Instance.NotificationInGame("Hết lựu đạn", 2.5f);
+        }
+        if (greanadeInInventory != null)
+        {
+            throwGrenade();
+            InventoryManager.Instance.RemoveItem(greanadeInInventory);
+        }
+    }
 
     private void throwGrenade()
     {

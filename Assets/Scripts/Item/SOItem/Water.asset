@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Water
   m_EditorClassIdentifier: 
   id: 1
-  itemName: Water
+  itemName: "N\u01B0\u1EDBc kho\xE1ng"
   value: 10
   image: {fileID: 21300000, guid: e4082a8faa1f3ee42857a7c8126835d9, type: 3}

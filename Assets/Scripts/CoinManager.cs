@@ -43,7 +43,7 @@ public class CoinManager : MonoBehaviour
         if (this.coin >= coinMinus) {
             this.coin -= coinMinus;
             SaveCoin();
-            if (txtCoin != null) ;
+            if (txtCoin != null) 
             DisplayCoin();
         }
         else
@@ -63,7 +63,7 @@ public class CoinManager : MonoBehaviour
     {
         if (txtCoin == null) return;
         LoadCoin();
-        Debug.Log("Display coin"+ coin.ToString());
+        //Debug.Log("Display coin"+ coin.ToString());
         txtCoin.text = coin.ToString() + "$";
     }
 

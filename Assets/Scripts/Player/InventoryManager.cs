@@ -58,7 +58,7 @@ public class InventoryManager : MonoBehaviour
         {
             GameObject itemUI = Instantiate(itemUIPrefab, holderItemUI);
             itemUI.GetComponent<ItemController>().SetItem(item);
-            itemUI.transform.Find("ItemName").GetComponent<TextMeshProUGUI>().text = item.name;
+            itemUI.transform.Find("ItemName").GetComponent<TextMeshProUGUI>().text = item.itemName;
             itemUI.transform.Find("ItemImage").GetComponent<Image>().sprite = item.image;
         }
     }

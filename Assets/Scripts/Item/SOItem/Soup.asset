@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Soup
   m_EditorClassIdentifier: 
   id: 0
-  itemName: Soup
+  itemName: "S\xFAp c\xE0 chua"
   value: 20
   image: {fileID: 21300000, guid: 9b3a1ba0daa3bc54cbc5377ec0dc6ef3, type: 3}
